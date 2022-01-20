@@ -38,13 +38,13 @@
                               return response.json();   
                          })
                          .then(function(data){
-                              var output = "<h1>Posts</h>";
+                              var output = "<h1>Posts</h1>";
 
                               for(a = 0; a < data.length; a++){
                                      output += 
                                      `
                                      <ul>
-                                         <li><h2>${data[0]}</h2></li>
+                                         <li><h2>${data[a][0]}</h2></li>
                                          <li><b>${data[a][1]}</b></li>
                                          <li>${data[a][2]}</li>   
                                       </ul>
